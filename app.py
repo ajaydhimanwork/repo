@@ -10,9 +10,9 @@ def sync():
 
     conn = pyodbc.connect(
         f"DRIVER={{ODBC Driver 17 for SQL Server}};"
-        f"SERVER={os.getenv('svlicense.wizoneit.com,1440')};"
-        f"DATABASE={os.getenv('TestingSheet')};"
-        f"UID={os.getenv('sa')};PWD={os.getenv('ss123456')}"
+        f"SERVER={os.getenv('DB_SERVER')};"
+        f"DATABASE={os.getenv('DB_NAME')};"
+        f"UID={os.getenv('DB_USER')};PWD={os.getenv('DB_PASS')}"
     )
 
     cursor = conn.cursor()
