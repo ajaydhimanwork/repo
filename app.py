@@ -25,3 +25,8 @@ def sync():
     )
     conn.commit()
     return "OK", 200
+
+# ✅ Required for Render
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 1440))
+    app.run(host='122.176.151.226', port=port)
