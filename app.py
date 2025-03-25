@@ -26,4 +26,4 @@ def sync():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 1440))
-    app.run(host=svlicense.wizoneit.com", port=port)
+    app.run(host="svlicense.wizoneit.com", port=port)
